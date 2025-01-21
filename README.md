@@ -1,6 +1,6 @@
 # Deep Learning for Cardiovascular Disease Detection Using ECG
 
-This project implements a deep learning pipeline for detecting cardiovascular diseases (CVDs) using ECG signals. It utilizes hybrid convolutional neural networks (CNNs) for feature extraction and classification, achieving high accuracy in identifying various heart conditions.
+This project uses ECG signals to implement a deep learning pipeline for detecting cardiovascular diseases (CVDs). It utilizes hybrid convolutional neural networks (CNNs) for feature extraction and classification, achieving high accuracy in identifying various heart conditions.
 
 ---
 
@@ -9,9 +9,7 @@ This project implements a deep learning pipeline for detecting cardiovascular di
 - [Dataset](#dataset)
 - [Approach](#approach)
 - [Results](#results)
-- [File Structure](#file-structure)
-- [Acknowledgments](#acknowledgments)
-
+  
 ---
 
 ## **Overview**
@@ -49,30 +47,5 @@ The project uses the **MIT-BIH Arrhythmia Dataset**, which contains annotated EC
 ## **Results**
 | Model      | Accuracy | Loss   |
 |------------|----------|--------|
-| 1D CNN     | 98.72%   | 0.0421 |
+| 1D CNN     | 98.40%   | 0.0545 |
 | 2D CNN     | 98%      | 0.065  |
-
----
-
-## **File Structure**
-```
-ECG-CVD-Detection/
-├── data/
-│   ├── raw_ecg_signals/
-│   ├── scalograms/
-├── models/
-│   ├── 1d_cnn_model.h5
-│   ├── 2d_cnn_model.h5
-├── train_1d_cnn.py
-├── train_2d_cnn.py
-├── evaluate.py
-├── requirements.txt
-├── README.md
-```
-
----
-
-## **Acknowledgments**
-- The **MIT-BIH Arrhythmia Dataset** provided the foundation for this work.
-- Scalograms were generated using **PyWavelets**.
-- Special thanks to the open-source community for frameworks like TensorFlow.
