@@ -9,8 +9,6 @@ This project implements a deep learning pipeline for detecting cardiovascular di
 - [Dataset](#dataset)
 - [Approach](#approach)
 - [Results](#results)
-- [How to Run](#how-to-run)
-- [Dependencies](#dependencies)
 - [File Structure](#file-structure)
 - [Acknowledgments](#acknowledgments)
 
@@ -53,51 +51,6 @@ The project uses the **MIT-BIH Arrhythmia Dataset**, which contains annotated EC
 |------------|----------|--------|
 | 1D CNN     | 98.72%   | 0.0421 |
 | 2D CNN     | 98%      | 0.065  |
-
----
-
-## **How to Run**
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/ECG-CVD-Detection.git
-   cd ECG-CVD-Detection
-   ```
-
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Preprocess the dataset (if not already done):
-   - Extract ECG signals and generate scalogram images.
-   - Update the dataset paths in the script.
-
-4. Train the models:
-   - Run the 1D CNN:
-     ```bash
-     python train_1d_cnn.py
-     ```
-   - Run the 2D CNN:
-     ```bash
-     python train_2d_cnn.py
-     ```
-
-5. Evaluate the models:
-   ```bash
-   python evaluate.py
-   ```
-
----
-
-## **Dependencies**
-- Python 3.8+
-- TensorFlow
-- NumPy
-- SciPy
-- Matplotlib
-- PyWavelets
-- PIL (Pillow)
 
 ---
 
